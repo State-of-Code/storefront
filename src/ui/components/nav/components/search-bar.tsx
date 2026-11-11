@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import { SearchIcon } from "lucide-react";
 import { Suspense } from "react";
 import { buildStorefrontPath } from "@/lib/storefront-path";
-import { SearchQueryInput } from "./search-query-input";
+import { SearchQueryInput } from "@/ui/components/nav/components/search-query-input";
 
 export const SearchBar = ({
 	locale,

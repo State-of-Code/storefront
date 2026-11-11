@@ -1,7 +1,7 @@
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { SearchQueryInput } from "./search-query-input";
+import { SearchQueryInput } from "@/ui/components/nav/components/search-query-input";
 
 const navigation = vi.hoisted(() => ({
 	pathname: "/en/default-channel/search",
