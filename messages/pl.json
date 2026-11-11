@@ -27,6 +27,11 @@
 		"breadcrumbProducts": "Produkty"
 	},
 	"common": {
+		"theme": {
+			"darkMode": "Tryb ciemny",
+			"switchToLight": "Włącz tryb jasny",
+			"switchToDark": "Włącz tryb ciemny"
+		},
 		"pagination": {
 			"previous": "Poprzednia",
 			"next": "Następna"

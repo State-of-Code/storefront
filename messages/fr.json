@@ -27,6 +27,11 @@
 		"breadcrumbProducts": "Produits"
 	},
 	"common": {
+		"theme": {
+			"darkMode": "Mode sombre",
+			"switchToLight": "Passer au mode clair",
+			"switchToDark": "Passer au mode sombre"
+		},
 		"pagination": {
 			"previous": "Précédent",
 			"next": "Suivant"

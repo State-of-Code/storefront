@@ -27,6 +27,11 @@
 		"breadcrumbProducts": "Tuotteet"
 	},
 	"common": {
+		"theme": {
+			"darkMode": "Tumma tila",
+			"switchToLight": "Vaihda vaaleaan tilaan",
+			"switchToDark": "Vaihda tummaan tilaan"
+		},
 		"pagination": {
 			"previous": "Edellinen",
 			"next": "Seuraava"
