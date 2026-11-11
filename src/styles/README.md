@@ -25,7 +25,7 @@ Copy and metadata (site name, tagline) live in `src/config/brand.ts`.
 | Favicons                              | `public/favicon*`                                             |
 | OG image hex colors                   | `src/lib/seo/og-brand-colors.ts` (sync with `brand.css`)      |
 
-**Light-only UI:** Storefront pages use the light theme only (no `.dark` class). Browser tab favicons in `src/lib/seo/metadata.ts` still follow `prefers-color-scheme` so icons stay readable on dark browser chrome — that is intentional and not an in-app dark mode.
+**Color themes:** Storefront pages default to light mode. The header's sun/moon toggle switches `html[data-theme="dark"]`, with semantic dark color pairs defined in `brand.css`. The choice is saved as `paper-theme` in local storage, restored before paint, and synchronized across tabs. Storage restrictions do not prevent switching within the current page. Product photography is unchanged; monochrome logos adapt to the active palette. Checkout is a separate document and retains its existing light theme. Browser tab favicons independently follow `prefers-color-scheme`.
 
 ---
 

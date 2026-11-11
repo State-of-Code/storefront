@@ -27,6 +27,11 @@
 		"breadcrumbProducts": "상품"
 	},
 	"common": {
+		"theme": {
+			"darkMode": "다크 모드",
+			"switchToLight": "라이트 모드로 전환",
+			"switchToDark": "다크 모드로 전환"
+		},
 		"pagination": {
 			"previous": "이전",
 			"next": "다음"

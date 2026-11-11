@@ -22,6 +22,13 @@ export const Logo = ({ className, ariaLabel = "Paper by Saleor", inverted = fals
 
 	return (
 		// eslint-disable-next-line @next/next/no-img-element
-		<img src={src} alt={ariaLabel} width={100} height={23} className={`aspect-[100/23] ${className ?? ""}`} />
+		<img
+			data-theme-logo
+			src={src}
+			alt={ariaLabel}
+			width={100}
+			height={23}
+			className={`aspect-[100/23] ${className ?? ""}`}
+		/>
 	);
 };

@@ -27,6 +27,11 @@
 		"breadcrumbProducts": "Produkter"
 	},
 	"common": {
+		"theme": {
+			"darkMode": "Mørk modus",
+			"switchToLight": "Bytt til lys modus",
+			"switchToDark": "Bytt til mørk modus"
+		},
 		"pagination": {
 			"previous": "Forrige",
 			"next": "Neste"

@@ -40,7 +40,7 @@ Use semantic Tailwind classes mapped to `brand.css` — never raw palette values
 | Borders                         | `border-border`                                                               |
 | On dark bands (`bg-foreground`) | `text-inverse`, `text-inverse-subtle`, `text-inverse-muted`, `border-inverse` |
 
-Light-only UI (no `.dark`). Optional editorial display font via `NEXT_PUBLIC_TYPOGRAPHY_THEME=editorial`.
+Light is the default; the header toggle enables `html[data-theme="dark"]` with paired semantic overrides in `brand.css`. Optional editorial display font via `NEXT_PUBLIC_TYPOGRAPHY_THEME=editorial`.
 
 **Keep the palette to ~3–5 colors.** A premium palette is small: **one** primary/brand color + the neutral ramp (background/foreground/greys) + **1–2** accents (e.g. `bestseller`, sale). Don't exceed ~5 meaningful colors without a deliberate reason — more colors read as noise, not richness.
 
