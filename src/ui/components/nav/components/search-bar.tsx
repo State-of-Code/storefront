@@ -1,6 +1,8 @@
 import { redirect } from "next/navigation";
 import { SearchIcon } from "lucide-react";
+import { Suspense } from "react";
 import { buildStorefrontPath } from "@/lib/storefront-path";
+import { SearchQueryInput } from "./search-query-input";
 
 export const SearchBar = ({
 	locale,
@@ -13,6 +15,17 @@ export const SearchBar = ({
 	placeholder: string;
 	srOnlyLabel: string;
 }) => {
+	const searchPath = buildStorefrontPath(locale, channel, "/search");
+	const inputProps = {
+		type: "text",
+		name: "search",
+		placeholder,
+		autoComplete: "off",
+		required: true,
+		className:
+			"hover:bg-secondary/80 focus:outline-hidden h-10 w-full rounded-lg border border-transparent bg-secondary py-2 pl-11 pr-4 text-sm text-foreground transition-all placeholder:text-muted-foreground hover:border-border focus:border-ring focus:bg-background focus:ring-1 focus:ring-ring",
+	};
+
 	async function onSubmit(formData: FormData) {
 		"use server";
 		const search = formData.get("search") as string;
@@ -33,14 +46,9 @@ export const SearchBar = ({
 					/>
 				</span>
 				{/* Input */}
-				<input
-					type="text"
-					name="search"
-					placeholder={placeholder}
-					autoComplete="off"
-					required
-					className="hover:bg-secondary/80 focus:outline-hidden h-10 w-full rounded-lg border border-transparent bg-secondary py-2 pl-11 pr-4 text-sm text-foreground transition-all placeholder:text-muted-foreground hover:border-border focus:border-ring focus:bg-background focus:ring-1 focus:ring-ring"
-				/>
+				<Suspense fallback={<input {...inputProps} />}>
+					<SearchQueryInput {...inputProps} searchPath={searchPath} />
+				</Suspense>
 			</label>
 		</form>
 	);
