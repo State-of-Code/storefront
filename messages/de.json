@@ -1,4 +1,10 @@
 {
+	"recentlyViewed": {
+		"title": "Zuletzt angesehen",
+		"description": "Setzen Sie Ihre Entdeckung fort. Die Preise stammen von Ihrem letzten Besuch.",
+		"noImage": "Bild nicht verfügbar",
+		"priceUnavailable": "Preis nicht verfügbar"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# Artikel} other {# Artikel}}",

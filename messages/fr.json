@@ -1,4 +1,10 @@
 {
+	"recentlyViewed": {
+		"title": "Articles récemment consultés",
+		"description": "Reprenez votre découverte. Les prix affichés datent de votre dernière visite.",
+		"noImage": "Image indisponible",
+		"priceUnavailable": "Prix indisponible"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# article} other {# articles}}",

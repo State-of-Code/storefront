@@ -1,4 +1,10 @@
 {
+	"recentlyViewed": {
+		"title": "Nylig sett",
+		"description": "Fortsett der du slapp. Prisene er fra ditt siste besøk.",
+		"noImage": "Bilde utilgjengelig",
+		"priceUnavailable": "Pris utilgjengelig"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# vare} other {# varer}}",

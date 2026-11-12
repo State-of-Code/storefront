@@ -1,4 +1,10 @@
 {
+	"recentlyViewed": {
+		"title": "最近チェックした商品",
+		"description": "前回の続きからお買い物。表示価格は前回閲覧時のものです。",
+		"noImage": "画像はありません",
+		"priceUnavailable": "価格を表示できません"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, other {# 点}}",

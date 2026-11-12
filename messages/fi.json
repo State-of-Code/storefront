@@ -1,4 +1,10 @@
 {
+	"recentlyViewed": {
+		"title": "Viimeksi katsotut",
+		"description": "Jatka siitä, mihin jäit. Hinnat ovat viime vierailultasi.",
+		"noImage": "Kuva ei saatavilla",
+		"priceUnavailable": "Hinta ei saatavilla"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# tuote} other {# tuotetta}}",

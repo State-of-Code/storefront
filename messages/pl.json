@@ -1,4 +1,10 @@
 {
+	"recentlyViewed": {
+		"title": "Ostatnio oglądane",
+		"description": "Wróć do przeglądania. Wyświetlane ceny pochodzą z Twojej ostatniej wizyty.",
+		"noImage": "Zdjęcie niedostępne",
+		"priceUnavailable": "Cena niedostępna"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# produkt} few {# produkty} many {# produktów} other {# produktu}}",

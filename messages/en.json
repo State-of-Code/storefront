@@ -1,4 +1,10 @@
 {
+	"recentlyViewed": {
+		"title": "Recently viewed",
+		"description": "Pick up where you left off. Prices shown are from your last visit.",
+		"noImage": "Image unavailable",
+		"priceUnavailable": "Price unavailable"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# item} other {# items}}",

@@ -1,4 +1,10 @@
 {
+	"recentlyViewed": {
+		"title": "최근 본 상품",
+		"description": "이어서 둘러보세요. 표시된 가격은 마지막 방문 시점의 가격입니다.",
+		"noImage": "이미지 없음",
+		"priceUnavailable": "가격 정보 없음"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, other {상품 #개}}",
