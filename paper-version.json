@@ -105,5 +105,10 @@
 			"skipped": false
 		}
 	],
-	"coreOverrides": []
+	"coreOverrides": [
+		{
+			"path": "src/lib/listing/providers/saleor/to-card.ts",
+			"reason": "Pass the fork-owned ProductListItemExtension.isAvailable field through to product comparison without changing the core listing contract."
+		}
+	]
 }

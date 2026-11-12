@@ -1,4 +1,32 @@
 {
+	"comparison": {
+		"title": "商品を比較",
+		"description": "表示されているカタログ価格で2つの商品を比較します。最終価格と在庫状況は購入手続き時に確認されます。",
+		"add": "比較する",
+		"selected": "選択済み",
+		"addProduct": "{name}を比較",
+		"removeProduct": "{name}を比較から削除",
+		"limit": "2つの商品が選択されています。別の商品を比較するには1つ削除してください。",
+		"currency": "同じ通貨の商品を選択してください。",
+		"count": "{count}/2点選択済み",
+		"ready": "商品の比較準備ができました。",
+		"chooseSecond": "比較する商品をもう1つ選択してください。",
+		"open": "商品を比較",
+		"reset": "比較をクリア",
+		"close": "閉じる",
+		"price": "表示価格",
+		"availability": "在庫状況",
+		"available": "購入可能",
+		"unavailable": "現在購入できません",
+		"unknownAvailability": "商品ページで確認",
+		"category": "カテゴリー",
+		"colors": "カラー",
+		"sizes": "サイズ",
+		"notProvided": "情報なし",
+		"sampledOptions": "表示されているオプションは一部です。すべてのオプションは商品ページで確認してください。",
+		"viewProduct": "商品を見る",
+		"remove": "削除"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, other {# 点}}",

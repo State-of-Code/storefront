@@ -1,4 +1,5 @@
 # Fork-owned fields on listing cards. Add selections here; do not edit ProductListItem.graphql.
 fragment ProductListItemExtension on Product {
 	__typename
+	isAvailable
 }

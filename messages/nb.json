@@ -1,4 +1,32 @@
 {
+	"comparison": {
+		"title": "Sammenlign produkter",
+		"description": "Sammenlign to produkter med deres viste katalogpriser. Endelig pris og tilgjengelighet bekreftes i kassen.",
+		"add": "Sammenlign",
+		"selected": "Valgt",
+		"addProduct": "Sammenlign {name}",
+		"removeProduct": "Fjern {name} fra sammenligningen",
+		"limit": "To produkter valgt. Fjern ett for å sammenligne et annet.",
+		"currency": "Velg produkter med samme valuta.",
+		"count": "{count} av 2 valgt",
+		"ready": "Produktene dine er klare til sammenligning.",
+		"chooseSecond": "Velg ett produkt til for å sammenligne.",
+		"open": "Sammenlign produkter",
+		"reset": "Tøm sammenligningen",
+		"close": "Lukk",
+		"price": "Vist pris",
+		"availability": "Tilgjengelighet",
+		"available": "Tilgjengelig",
+		"unavailable": "Ikke tilgjengelig nå",
+		"unknownAvailability": "Se produktsiden",
+		"category": "Kategori",
+		"colors": "Fargevalg",
+		"sizes": "Størrelser",
+		"notProvided": "Ikke oppgitt",
+		"sampledOptions": "Alternativene som vises er et utvalg. Se produktet for alle alternativer.",
+		"viewProduct": "Se produkt",
+		"remove": "Fjern"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# vare} other {# varer}}",

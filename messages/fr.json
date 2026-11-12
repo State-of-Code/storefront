@@ -1,4 +1,32 @@
 {
+	"comparison": {
+		"title": "Comparer les produits",
+		"description": "Comparez deux produits aux prix affichés du catalogue. Le prix final et la disponibilité sont confirmés lors du paiement.",
+		"add": "Comparer",
+		"selected": "Sélectionné",
+		"addProduct": "Comparer {name}",
+		"removeProduct": "Retirer {name} de la comparaison",
+		"limit": "Deux produits sélectionnés. Retirez-en un pour en comparer un autre.",
+		"currency": "Choisissez des produits dans la même devise.",
+		"count": "{count} sur 2 sélectionnés",
+		"ready": "Vos produits sont prêts à être comparés.",
+		"chooseSecond": "Choisissez un autre produit à comparer.",
+		"open": "Comparer les produits",
+		"reset": "Effacer la comparaison",
+		"close": "Fermer",
+		"price": "Prix affiché",
+		"availability": "Disponibilité",
+		"available": "Disponible",
+		"unavailable": "Actuellement indisponible",
+		"unknownAvailability": "Consultez la fiche produit",
+		"category": "Catégorie",
+		"colors": "Coloris",
+		"sizes": "Tailles",
+		"notProvided": "Non renseigné",
+		"sampledOptions": "Les options affichées sont un échantillon. Consultez le produit pour toutes les options.",
+		"viewProduct": "Voir le produit",
+		"remove": "Retirer"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# article} other {# articles}}",
