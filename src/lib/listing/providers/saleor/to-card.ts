@@ -67,7 +67,7 @@ export function toProductCardData(
 	product: ProductListItemFragment,
 	locale: string,
 	channel: string,
-): ProductCardView {
+): ProductCardView & { isAvailable: boolean | null } {
 	const startPrice = product.pricing?.priceRange?.start?.gross;
 	const stopPrice = product.pricing?.priceRange?.stop?.gross;
 	const undiscountedStartPrice = product.pricing?.priceRangeUndiscounted?.start?.gross;
@@ -90,6 +90,7 @@ export function toProductCardData(
 
 	return {
 		id: product.id,
+		isAvailable: product.isAvailable ?? null,
 		name: productName,
 		slug: product.slug,
 		brand: categoryName,
