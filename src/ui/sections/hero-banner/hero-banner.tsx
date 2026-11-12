@@ -65,7 +65,7 @@ export function HeroBanner({
 						quality={PRODUCT_IMAGE_QUALITY}
 						priority
 					/>
-					<div className="absolute inset-0 bg-gradient-to-r from-foreground/70 via-foreground/40 to-transparent" />
+					<div className="absolute inset-0 bg-gradient-to-r from-inverse-surface/70 via-inverse-surface/40 to-transparent" />
 				</div>
 			) : null}
 
@@ -73,7 +73,10 @@ export function HeroBanner({
 				<div className="max-w-2xl">
 					<h1
 						id="homepage-hero-heading"
-						className={cn("text-balance text-display", hasImage ? "text-background" : "text-foreground")}
+						className={cn(
+							"text-balance text-display",
+							hasImage ? "text-photo-foreground" : "text-foreground",
+						)}
 					>
 						{heading}
 					</h1>
@@ -81,7 +84,7 @@ export function HeroBanner({
 						<p
 							className={cn(
 								"mt-5 text-pretty text-lead md:mt-6",
-								hasImage ? "text-background" : "text-muted-foreground",
+								hasImage ? "text-photo-foreground" : "text-muted-foreground",
 							)}
 						>
 							{subheading}
@@ -108,7 +111,7 @@ export function HeroBanner({
 										size: "lg",
 										variant: secondaryCta.variant === "primary" ? "default" : "outline-solid",
 										className: hasImage
-											? "border-background/30 bg-background/10 text-background hover:bg-background/20"
+											? "border-photo-foreground/30 bg-photo-foreground/10 text-photo-foreground hover:bg-photo-foreground/20"
 											: undefined,
 									})}
 								/>

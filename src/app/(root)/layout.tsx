@@ -3,6 +3,9 @@ import { type ReactNode } from "react";
 import { rootMetadata } from "@/lib/seo";
 import { getDefaultLocaleSlug, resolveLocaleFromSlug } from "@/config/locale";
 import { getRootHtmlFontProps } from "@/lib/fonts";
+import { darkModeEnabled } from "@/config/color-scheme";
+import { ColorSchemeInit } from "@/ui/components/color-scheme-init";
+import { ColorSchemeScript } from "@/ui/components/color-scheme-script";
 
 export const metadata = rootMetadata;
 
@@ -18,7 +21,11 @@ export default function RootGroupLayout({ children }: { children: ReactNode }) {
 
 	return (
 		<html {...htmlProps}>
-			<body className="min-h-dvh font-sans">{children}</body>
+			<head>{darkModeEnabled() && <ColorSchemeScript />}</head>
+			<body className="min-h-dvh font-sans">
+				{darkModeEnabled() && <ColorSchemeInit />}
+				{children}
+			</body>
 		</html>
 	);
 }

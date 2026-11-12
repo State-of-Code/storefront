@@ -1,4 +1,38 @@
 {
+	"recentlyViewed": {
+		"title": "Zuletzt angesehen",
+		"description": "Setzen Sie Ihre Entdeckung fort. Die Preise stammen von Ihrem letzten Besuch.",
+		"noImage": "Bild nicht verfügbar",
+		"priceUnavailable": "Preis nicht verfügbar"
+	},
+	"comparison": {
+		"title": "Produkte vergleichen",
+		"description": "Vergleichen Sie zwei Produkte anhand ihrer angezeigten Katalogpreise. Endpreis und Verfügbarkeit werden an der Kasse bestätigt.",
+		"add": "Vergleichen",
+		"selected": "Ausgewählt",
+		"addProduct": "{name} vergleichen",
+		"removeProduct": "{name} aus dem Vergleich entfernen",
+		"limit": "Zwei Produkte ausgewählt. Entfernen Sie eines, um ein anderes zu vergleichen.",
+		"currency": "Wählen Sie Produkte mit derselben Währung.",
+		"count": "{count} von 2 ausgewählt",
+		"ready": "Ihre Produkte sind bereit zum Vergleich.",
+		"chooseSecond": "Wählen Sie ein weiteres Produkt zum Vergleich.",
+		"open": "Produkte vergleichen",
+		"reset": "Vergleich leeren",
+		"close": "Schließen",
+		"price": "Angezeigter Preis",
+		"availability": "Verfügbarkeit",
+		"available": "Verfügbar",
+		"unavailable": "Derzeit nicht verfügbar",
+		"unknownAvailability": "Produktseite ansehen",
+		"category": "Kategorie",
+		"colors": "Farboptionen",
+		"sizes": "Größenoptionen",
+		"notProvided": "Nicht angegeben",
+		"sampledOptions": "Die Optionen sind eine Auswahl. Alle Optionen finden Sie auf der Produktseite.",
+		"viewProduct": "Produkt ansehen",
+		"remove": "Entfernen"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# Artikel} other {# Artikel}}",
@@ -128,7 +162,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "Hauptnavigation"
+			"mainAriaLabel": "Hauptnavigation",
+			"toggleDarkMode": "Dunkelmodus umschalten"
 		},
 		"breadcrumbAriaLabel": "Brotkrümelnavigation",
 		"cartButton": "{count, plural, one {# Artikel im Warenkorb, Tasche ansehen} other {# Artikel im Warenkorb, Tasche ansehen}}",

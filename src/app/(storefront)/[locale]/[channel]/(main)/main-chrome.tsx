@@ -1,5 +1,7 @@
 import { type ReactNode, Suspense } from "react";
 import { Footer } from "@/ui/components/footer";
+import { RecentlyViewed } from "@/ui/components/recently-viewed/recently-viewed";
+import { RECENTLY_VIEWED_ENABLED } from "@/ui/components/recently-viewed/history";
 import { BrowseHeaderFrame } from "./browse-header-frame";
 import { type BrowseRouteParams } from "./browse-chrome-slots";
 
@@ -43,6 +45,11 @@ async function FooterSlot({ params }: { params: BrowseRouteParams }) {
 	return <Footer locale={locale} channel={channel} />;
 }
 
+async function RecentlyViewedSlot({ params }: { params: BrowseRouteParams }) {
+	const { locale, channel } = await params;
+	return <RecentlyViewed locale={locale} channel={channel} />;
+}
+
 /**
  * Sync browse chrome below the announcement bar — header and footer each stream in
  * their own Suspense boundary; `<main>` is never gated on cached copy fetches.
@@ -54,6 +61,11 @@ export function MainChrome({ params, children }: { params: BrowseRouteParams; ch
 			<BrowseHeaderFrame params={params} />
 			<div className="flex min-h-[calc(100dvh-var(--chrome-offset))] flex-col">
 				<main className="flex-1">{children}</main>
+				{RECENTLY_VIEWED_ENABLED && (
+					<Suspense fallback={null}>
+						<RecentlyViewedSlot params={params} />
+					</Suspense>
+				)}
 				<Suspense fallback={<FooterSkeleton />}>
 					<FooterSlot params={params} />
 				</Suspense>

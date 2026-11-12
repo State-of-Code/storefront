@@ -20,6 +20,9 @@ import { speedInsightsSampleRate } from "@/lib/speed-insights";
 import { webAnalyticsEnabled } from "@/lib/analytics/web-analytics";
 import { AnalyticsMount } from "@/ui/components/analytics-mount";
 import { WebAnalytics } from "@/ui/components/web-analytics";
+import { darkModeEnabled } from "@/config/color-scheme";
+import { ColorSchemeInit } from "@/ui/components/color-scheme-init";
+import { ColorSchemeScript } from "@/ui/components/color-scheme-script";
 
 /**
  * Root defaults + `og:locale` derived from the URL locale segment. Params-only, so it
@@ -79,10 +82,12 @@ export default async function LocaleRootLayout({
 
 	return (
 		<html {...htmlProps}>
+			<head>{darkModeEnabled() && <ColorSchemeScript />}</head>
 			{/* No crossOrigin: plain <img> fetches are not CORS, and a `crossorigin`
 			    preconnect would warm a connection the image load cannot reuse. */}
 			{mediaOrigin && <link rel="preconnect" href={mediaOrigin} />}
 			<body className="min-h-dvh font-sans">
+				{darkModeEnabled() && <ColorSchemeInit />}
 				<NextIntlClientProvider locale={localeSlug} messages={messages} timeZone={getDefaultTimeZone()}>
 					<PersistBrowseLocaleCookie locale={localeSlug} />
 					{children}

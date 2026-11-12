@@ -154,18 +154,18 @@ export function CategoryTileGrid({
 									/>
 								) : null}
 								<div
-									className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/15 to-transparent"
+									className="absolute inset-0 bg-gradient-to-t from-inverse-surface/75 via-inverse-surface/15 to-transparent"
 									aria-hidden="true"
 								/>
 								<div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-6">
 									<div>
 										{tile.subtitle ? (
-											<p className="text-eyebrow uppercase text-background/80">{tile.subtitle}</p>
+											<p className="text-eyebrow uppercase text-photo-foreground/80">{tile.subtitle}</p>
 										) : null}
-										<h3 className="text-h3 text-background">{tile.title}</h3>
+										<h3 className="text-h3 text-photo-foreground">{tile.title}</h3>
 									</div>
 									<ArrowRight
-										className="h-5 w-5 shrink-0 text-background transition-transform duration-base ease-standard motion-reduce:transition-none md:group-hover:translate-x-1"
+										className="h-5 w-5 shrink-0 text-photo-foreground transition-transform duration-base ease-standard motion-reduce:transition-none md:group-hover:translate-x-1"
 										aria-hidden="true"
 									/>
 								</div>

@@ -9,6 +9,9 @@ import { speedInsightsSampleRate } from "@/lib/speed-insights";
 import { webAnalyticsEnabled } from "@/lib/analytics/web-analytics";
 import { AnalyticsMount } from "@/ui/components/analytics-mount";
 import { WebAnalytics } from "@/ui/components/web-analytics";
+import { darkModeEnabled } from "@/config/color-scheme";
+import { ColorSchemeInit } from "@/ui/components/color-scheme-init";
+import { ColorSchemeScript } from "@/ui/components/color-scheme-script";
 
 const defaultHtmlLang = resolveLocaleFromSlug(getDefaultLocaleSlug()).htmlLang;
 
@@ -24,7 +27,9 @@ export default function CheckoutLayout(props: { children: ReactNode }) {
 
 	return (
 		<html {...htmlProps} className={cn(htmlProps.className, GeistMono.variable)}>
+			<head>{darkModeEnabled() && <ColorSchemeScript />}</head>
 			<body className="min-h-dvh font-sans">
+				{darkModeEnabled() && <ColorSchemeInit />}
 				<main className="min-h-dvh">{props.children}</main>
 				{/* Sampled — unsampled Speed Insights dominates the Vercel bill at scale. */}
 				<SpeedInsights sampleRate={speedInsightsSampleRate()} />

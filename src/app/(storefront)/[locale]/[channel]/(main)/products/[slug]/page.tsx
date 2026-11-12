@@ -23,6 +23,8 @@ import { toProductView } from "@/lib/storefront/mappers/product";
 import { buildStorefrontPath } from "@/lib/storefront-path";
 import { pickTranslatedSlug } from "@/lib/saleor-translations";
 import { Breadcrumbs } from "@/ui/components/breadcrumbs";
+import { RECENTLY_VIEWED_ENABLED } from "@/ui/components/recently-viewed/history";
+import { RecentlyViewedTracker } from "@/ui/components/recently-viewed/recently-viewed-tracker";
 import {
 	ProductAttributes,
 	activeGalleryVariant,
@@ -225,6 +227,19 @@ async function ProductShell({
 			{/* Next rejects openGraph.type "product" (E237). Hoist after the product
 			    exists so missing-slug 404s never advertise og:type=product. */}
 			<meta property="og:type" content="product" />
+			{RECENTLY_VIEWED_ENABLED && (
+				<RecentlyViewedTracker
+					locale={params.locale}
+					channel={params.channel}
+					product={{
+						id: view.id,
+						name: view.name,
+						href: browse(productPath),
+						image: product.thumbnail?.url ?? view.images[0]?.url ?? null,
+						price: view.priceRange,
+					}}
+				/>
+			)}
 			<CatalogIdentityBridge
 				kind="products"
 				primarySlug={product.slug}

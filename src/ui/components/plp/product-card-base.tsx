@@ -8,6 +8,8 @@ import { PLP_IMAGE_SIZES, PRODUCT_IMAGE_QUALITY } from "@/lib/images";
 import { SaleorImage } from "@/ui/atoms/saleor-image";
 import type { ProductCardData } from "./product-card-data";
 import { ProductCardLink } from "./product-card-link";
+import { productComparisonEnabled } from "@/config/product-comparison";
+import { ProductComparisonButton } from "@/ui/components/comparison/product-comparison";
 
 export interface ProductCardBaseProps {
 	product: ProductCardData;
@@ -117,6 +119,7 @@ export function ProductCardBase({
 					</div>
 				</div>
 			</ProductCardLink>
+			{productComparisonEnabled() && <ProductComparisonButton product={product} />}
 		</article>
 	);
 }

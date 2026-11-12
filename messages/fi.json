@@ -1,4 +1,38 @@
 {
+	"recentlyViewed": {
+		"title": "Viimeksi katsotut",
+		"description": "Jatka siitä, mihin jäit. Hinnat ovat viime vierailultasi.",
+		"noImage": "Kuva ei saatavilla",
+		"priceUnavailable": "Hinta ei saatavilla"
+	},
+	"comparison": {
+		"title": "Vertaa tuotteita",
+		"description": "Vertaa kahta tuotetta niiden näytettyjen luettelohintojen perusteella. Lopullinen hinta ja saatavuus vahvistetaan kassalla.",
+		"add": "Vertaa",
+		"selected": "Valittu",
+		"addProduct": "Vertaa tuotetta {name}",
+		"removeProduct": "Poista {name} vertailusta",
+		"limit": "Kaksi tuotetta valittu. Poista yksi vertaillaksesi toista.",
+		"currency": "Valitse tuotteet, joilla on sama valuutta.",
+		"count": "{count}/2 valittu",
+		"ready": "Tuotteesi ovat valmiita vertailuun.",
+		"chooseSecond": "Valitse vielä yksi tuote vertailuun.",
+		"open": "Vertaa tuotteita",
+		"reset": "Tyhjennä vertailu",
+		"close": "Sulje",
+		"price": "Näytetty hinta",
+		"availability": "Saatavuus",
+		"available": "Saatavilla",
+		"unavailable": "Ei tällä hetkellä saatavilla",
+		"unknownAvailability": "Tarkista tuotesivu",
+		"category": "Tuoteryhmä",
+		"colors": "Värivaihtoehdot",
+		"sizes": "Kokovaihtoehdot",
+		"notProvided": "Ei ilmoitettu",
+		"sampledOptions": "Näytetyt vaihtoehdot ovat otos. Katso kaikki vaihtoehdot tuotesivulta.",
+		"viewProduct": "Katso tuote",
+		"remove": "Poista"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# tuote} other {# tuotetta}}",
@@ -128,7 +162,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "Päänavigaatio"
+			"mainAriaLabel": "Päänavigaatio",
+			"toggleDarkMode": "Vaihda tumma tila"
 		},
 		"breadcrumbAriaLabel": "Murupolku",
 		"cartButton": "{count, plural, one {# tuote ostoskorissa, avaa kassi} other {# tuotetta ostoskorissa, avaa kassi}}",

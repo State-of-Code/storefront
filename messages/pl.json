@@ -1,4 +1,38 @@
 {
+	"recentlyViewed": {
+		"title": "Ostatnio oglądane",
+		"description": "Wróć do przeglądania. Wyświetlane ceny pochodzą z Twojej ostatniej wizyty.",
+		"noImage": "Zdjęcie niedostępne",
+		"priceUnavailable": "Cena niedostępna"
+	},
+	"comparison": {
+		"title": "Porównaj produkty",
+		"description": "Porównaj dwa produkty według wyświetlanych cen katalogowych. Ostateczna cena i dostępność są potwierdzane przy kasie.",
+		"add": "Porównaj",
+		"selected": "Wybrano",
+		"addProduct": "Porównaj {name}",
+		"removeProduct": "Usuń {name} z porównania",
+		"limit": "Wybrano dwa produkty. Usuń jeden, aby porównać inny.",
+		"currency": "Wybierz produkty w tej samej walucie.",
+		"count": "Wybrano {count} z 2",
+		"ready": "Produkty są gotowe do porównania.",
+		"chooseSecond": "Wybierz jeszcze jeden produkt do porównania.",
+		"open": "Porównaj produkty",
+		"reset": "Wyczyść porównanie",
+		"close": "Zamknij",
+		"price": "Wyświetlana cena",
+		"availability": "Dostępność",
+		"available": "Dostępny",
+		"unavailable": "Obecnie niedostępny",
+		"unknownAvailability": "Sprawdź stronę produktu",
+		"category": "Kategoria",
+		"colors": "Kolory",
+		"sizes": "Rozmiary",
+		"notProvided": "Nie podano",
+		"sampledOptions": "Pokazane opcje są przykładowe. Wszystkie opcje znajdziesz na stronie produktu.",
+		"viewProduct": "Zobacz produkt",
+		"remove": "Usuń"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# produkt} few {# produkty} many {# produktów} other {# produktu}}",
@@ -128,7 +162,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "Główne"
+			"mainAriaLabel": "Główne",
+			"toggleDarkMode": "Przełącz tryb ciemny"
 		},
 		"breadcrumbAriaLabel": "Nawigacja okruszkowa",
 		"cartButton": "{count, plural, one {# produkt w koszyku, zobacz koszyk} few {# produkty w koszyku, zobacz koszyk} many {# produktów w koszyku, zobacz koszyk} other {# produktu w koszyku, zobacz koszyk}}",

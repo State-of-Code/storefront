@@ -45,8 +45,10 @@ module.exports = {
 				border: "oklch(var(--border) / <alpha-value>)",
 				input: "oklch(var(--input) / <alpha-value>)",
 				ring: "oklch(var(--ring) / <alpha-value>)",
+				"photo-foreground": "oklch(var(--photo-foreground) / <alpha-value>)",
 				inverse: {
 					DEFAULT: "oklch(var(--inverse) / <alpha-value>)",
+					surface: "oklch(var(--surface-inverse) / <alpha-value>)",
 					subtle: "oklch(var(--inverse-subtle) / <alpha-value>)",
 					muted: "oklch(var(--inverse-muted) / <alpha-value>)",
 				},

@@ -1,4 +1,38 @@
 {
+	"recentlyViewed": {
+		"title": "Recently viewed",
+		"description": "Pick up where you left off. Prices shown are from your last visit.",
+		"noImage": "Image unavailable",
+		"priceUnavailable": "Price unavailable"
+	},
+	"comparison": {
+		"title": "Compare products",
+		"description": "Compare two products using their displayed catalog prices. Final price and availability are confirmed at checkout.",
+		"add": "Compare",
+		"selected": "Selected",
+		"addProduct": "Compare {name}",
+		"removeProduct": "Remove {name} from comparison",
+		"limit": "Two products selected. Remove one to compare another.",
+		"currency": "Choose products with the same currency.",
+		"count": "{count} of 2 selected",
+		"ready": "Your products are ready to compare.",
+		"chooseSecond": "Choose one more product to compare.",
+		"open": "Compare products",
+		"reset": "Clear comparison",
+		"close": "Close",
+		"price": "Display price",
+		"availability": "Availability",
+		"available": "Available",
+		"unavailable": "Currently unavailable",
+		"unknownAvailability": "Check product page",
+		"category": "Category",
+		"colors": "Color options",
+		"sizes": "Size options",
+		"notProvided": "Not provided",
+		"sampledOptions": "Options shown are a sample. View the product for all options.",
+		"viewProduct": "View product",
+		"remove": "Remove"
+	},
 	"cart": {
 		"drawer": {
 			"itemCount": "{count, plural, one {# item} other {# items}}",
@@ -128,7 +162,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "Main"
+			"mainAriaLabel": "Main",
+			"toggleDarkMode": "Toggle dark mode"
 		},
 		"breadcrumbAriaLabel": "Breadcrumb",
 		"cartButton": "{count, plural, one {# item in cart, view bag} other {# items in cart, view bag}}",
