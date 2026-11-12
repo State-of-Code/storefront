@@ -128,7 +128,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "Hoved"
+			"mainAriaLabel": "Hoved",
+			"toggleDarkMode": "Bytt mørk modus"
 		},
 		"breadcrumbAriaLabel": "Navigasjonssti",
 		"cartButton": "{count, plural, one {# vare i handlekurven, vis veske} other {# varer i handlekurven, vis veske}}",

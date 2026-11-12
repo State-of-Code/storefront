@@ -128,7 +128,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "Hauptnavigation"
+			"mainAriaLabel": "Hauptnavigation",
+			"toggleDarkMode": "Dunkelmodus umschalten"
 		},
 		"breadcrumbAriaLabel": "Brotkrümelnavigation",
 		"cartButton": "{count, plural, one {# Artikel im Warenkorb, Tasche ansehen} other {# Artikel im Warenkorb, Tasche ansehen}}",

@@ -119,7 +119,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "메인"
+			"mainAriaLabel": "메인",
+			"toggleDarkMode": "다크 모드 전환"
 		},
 		"breadcrumbAriaLabel": "이동 경로",
 		"cartButton": "{count, plural, other {장바구니에 상품 #개, 장바구니 보기}}",

@@ -25,7 +25,13 @@ Copy and metadata (site name, tagline) live in `src/config/brand.ts`.
 | Favicons                              | `public/favicon*`                                             |
 | OG image hex colors                   | `src/lib/seo/og-brand-colors.ts` (sync with `brand.css`)      |
 
-**Light-only UI:** Storefront pages use the light theme only (no `.dark` class). Browser tab favicons in `src/lib/seo/metadata.ts` still follow `prefers-color-scheme` so icons stay readable on dark browser chrome — that is intentional and not an in-app dark mode.
+**Optional dark mode:** Set `NEXT_PUBLIC_ENABLE_DARK_MODE=true` and restart development or rebuild production to enable the header sun/moon toggle. Missing, invalid, or `false` values preserve the light-only UI. The gate is deployment-wide, without user targeting; disable it and restart/rebuild to restore light mode (saved preferences are retained but ignored).
+
+When enabled, all root layouts apply `data-theme="light|dark"` before body paint. First visits follow the system preference; the toggle saves an explicit choice in `localStorage` (`paper-color-scheme`). Preferences survive navigation, reloads, and checkout handoff, and synchronize across tabs. Blocked storage still permits switching for the current document. Browser tab favicons independently follow `prefers-color-scheme`.
+
+Dark color overrides live in `brand.css`; semantic utilities need no component-specific dark classes. The footer uses `bg-inverse-surface` so it remains dark in both themes. Only the non-inverted monochrome logo is inverted, never product photography.
+
+Local QA: enable the flag, toggle using mouse and keyboard at desktop/mobile widths, reload, visit a product and checkout, and verify the saved theme. With storage cleared, change the system preference and verify it follows. Disable the flag and confirm the light-only UI returns. This rollout gate can be removed by the storefront maintainer after both palettes and persistence are accepted for general use.
 
 ---
 

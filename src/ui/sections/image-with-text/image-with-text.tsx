@@ -41,7 +41,7 @@ export interface ImageWithTextProps {
 const toneClassName: Record<SectionTone, string> = {
 	default: "bg-background text-foreground",
 	muted: "bg-muted text-foreground",
-	inverse: "bg-foreground text-inverse",
+	inverse: "bg-inverse-surface text-inverse",
 };
 
 const widthClassName: Record<ImageWithTextWidth, string> = {

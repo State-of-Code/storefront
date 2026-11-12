@@ -128,7 +128,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "Main"
+			"mainAriaLabel": "Main",
+			"toggleDarkMode": "Toggle dark mode"
 		},
 		"breadcrumbAriaLabel": "Breadcrumb",
 		"cartButton": "{count, plural, one {# item in cart, view bag} other {# items in cart, view bag}}",

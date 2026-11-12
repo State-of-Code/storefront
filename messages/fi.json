@@ -128,7 +128,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "Päänavigaatio"
+			"mainAriaLabel": "Päänavigaatio",
+			"toggleDarkMode": "Vaihda tumma tila"
 		},
 		"breadcrumbAriaLabel": "Murupolku",
 		"cartButton": "{count, plural, one {# tuote ostoskorissa, avaa kassi} other {# tuotetta ostoskorissa, avaa kassi}}",

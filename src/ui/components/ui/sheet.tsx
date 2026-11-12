@@ -20,7 +20,7 @@ const SheetOverlay = React.forwardRef<
 >(({ className, ...props }, ref) => (
 	<DialogPrimitive.Overlay
 		className={cn(
-			"bg-foreground/20 backdrop-blur-xs fixed inset-0 z-50",
+			"backdrop-blur-xs fixed inset-0 z-50 bg-inverse-surface/20",
 			"data-[state=open]:animate-in data-[state=closed]:animate-out",
 			"data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
 			className,
@@ -55,7 +55,8 @@ const sheetVariants = cva(
 );
 
 interface SheetContentProps
-	extends React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>,
+	extends
+		React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>,
 		VariantProps<typeof sheetVariants> {}
 
 const SheetContent = React.forwardRef<React.ComponentRef<typeof DialogPrimitive.Content>, SheetContentProps>(

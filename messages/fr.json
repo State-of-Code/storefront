@@ -128,7 +128,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "Principal"
+			"mainAriaLabel": "Principal",
+			"toggleDarkMode": "Activer ou désactiver le mode sombre"
 		},
 		"breadcrumbAriaLabel": "Fil d'Ariane",
 		"cartButton": "{count, plural, one {# article dans le panier, voir le panier} other {# articles dans le panier, voir le panier}}",

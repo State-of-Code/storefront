@@ -128,7 +128,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "Główne"
+			"mainAriaLabel": "Główne",
+			"toggleDarkMode": "Przełącz tryb ciemny"
 		},
 		"breadcrumbAriaLabel": "Nawigacja okruszkowa",
 		"cartButton": "{count, plural, one {# produkt w koszyku, zobacz koszyk} few {# produkty w koszyku, zobacz koszyk} many {# produktów w koszyku, zobacz koszyk} other {# produktu w koszyku, zobacz koszyk}}",

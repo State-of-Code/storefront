@@ -128,7 +128,8 @@
 	},
 	"nav": {
 		"header": {
-			"mainAriaLabel": "メイン"
+			"mainAriaLabel": "メイン",
+			"toggleDarkMode": "ダークモードを切り替える"
 		},
 		"breadcrumbAriaLabel": "パンくずリスト",
 		"cartButton": "{count, plural, other {カート内 # 点、バッグを見る}}",

@@ -59,12 +59,12 @@ const alignClassName: Record<MediaHeroAlign, string> = {
 
 const overlayClassName: Record<MediaHeroOverlay, string> = {
 	none: "",
-	scrim: "bg-foreground/40",
-	gradient: "bg-gradient-to-t from-foreground/70 via-foreground/25 to-transparent",
+	scrim: "bg-inverse-surface/40",
+	gradient: "bg-gradient-to-t from-inverse-surface/70 via-inverse-surface/25 to-transparent",
 };
 
 /**
- * Typography on solid vs scrim/panel surfaces. `inverse` uses `text-background` (true
+ * Typography on solid vs scrim/panel surfaces. `inverse` uses `text-photo-foreground` (true
  * near-white) for crisp copy on a photo scrim — NOT `text-inverse*` (muted grays tuned
  * for flat dark bands) and never opacity modifiers (don't compile on oklch CSS-var colors).
  */
@@ -76,9 +76,9 @@ const copyToneClassName: Record<MediaHeroCopyTone, { eyebrow: string; heading: s
 			subheading: "text-muted-foreground",
 		},
 		inverse: {
-			eyebrow: "text-background",
-			heading: "text-background",
-			subheading: "text-background",
+			eyebrow: "text-photo-foreground",
+			heading: "text-photo-foreground",
+			subheading: "text-photo-foreground",
 		},
 	};
 
@@ -104,7 +104,7 @@ function MediaHeroCtaLink({ cta, className }: { cta: MediaHeroCta; className: st
 /**
  * Full-viewport hero with a photographic or video background and overlaid copy.
  * Copy tone (`solid` | `inverse`) is derived from overlay + copySurface — inverse uses
- * `text-background` (near-white) on photo scrims; solid matches EditorialHero on
+ * `text-photo-foreground` (near-white in either theme) on photo scrims; solid matches EditorialHero on
  * panels / no media.
  *
  * `height="fold"` fills exactly to the first viewport fold (`100svh - --chrome-offset`),
@@ -141,7 +141,7 @@ export function MediaHero({
 		<section
 			className={cn(
 				"relative isolate flex flex-col overflow-hidden border-b border-border",
-				hasMedia ? "bg-foreground" : "bg-muted",
+				hasMedia ? "bg-inverse-surface" : "bg-muted",
 				heightClassName[height],
 				className,
 			)}
@@ -222,7 +222,7 @@ export function MediaHero({
 											variant: primaryCta.variant === "secondary" ? "secondary" : "default",
 											className:
 												copyTone === "inverse"
-													? "bg-background text-foreground hover:bg-background/90"
+													? "bg-photo-foreground text-inverse-surface hover:bg-photo-foreground/90"
 													: undefined,
 										})}
 									/>
@@ -236,7 +236,7 @@ export function MediaHero({
 											variant: secondaryCta.variant === "primary" ? "default" : "outline-solid",
 											className:
 												copyTone === "inverse"
-													? "border-background/30 bg-background/10 text-background hover:bg-background/20"
+													? "border-photo-foreground/30 bg-photo-foreground/10 text-photo-foreground hover:bg-photo-foreground/20"
 													: undefined,
 										})}
 									/>
